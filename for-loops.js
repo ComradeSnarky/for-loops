@@ -95,3 +95,66 @@ for (var anyVar in antSpecies) {
   console.log(anyVar);
 } 
 
+
+// Create a stackLetters function that should console.log rows of letters. 
+// It should take an array containing the letters of the alphabet and output them like this:
+//a
+//ab
+//abc
+//abcd
+//abcde
+//abcdef
+//Then add logic to stackLetters that places a space after every fifth letter, like this:
+// a
+// ab
+// abd
+// abcd
+// abcde
+// abcde f
+
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+ "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+function stackLetters() {
+  var abcs = ' ';
+  var counter = 1;
+  for (var i = 0; i <= alphabet.length; i++) {
+    abcs += alphabet[i];
+    if (counter === 5) {
+      abcs += ' ';
+      counter = 0;
+    }
+    counter++;
+    console.log(abcs);
+  }
+}
+stackLetters();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
